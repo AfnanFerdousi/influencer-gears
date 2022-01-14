@@ -83,6 +83,37 @@ a{
     background-color: #e25970;
 }
 
+/* Partners CSS*/
+.partners{
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+.partners img{
+    padding: 0 15px;
+}
+.partners::before{
+  content: "";
+  display: block;
+  width: 550px;
+  height: 2px;
+  background: rgb(161, 156, 156);
+  left: 27.5%;
+  top: -35px;
+  position: absolute;
+}
+.partners::after {
+    content: "";
+    display: block;
+    width: 550px;
+    height: 2px;
+    background: rgb(161, 156, 156);
+    left: 27.5%;
+    top: 70px;
+    position: absolute;
+}
+
 /* Products CSS */
 .section-title {
     text-align: center;
@@ -125,7 +156,7 @@ a{
     color: gray;
     padding: 3px 0;
 }
-#products a{
+.all-gears a{
     color: #e25970;
 }
 
