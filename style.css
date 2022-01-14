@@ -54,3 +54,107 @@ a{
 }
 
 /* Top-page CSS */
+.top-page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.top-titles h1 {
+    font-size: 50px;
+    margin-top: 100px;
+}
+.top-titles p {
+    margin: 18px 0;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+.btn {
+    background-color: #ab273c;
+    padding: 10px 40px;
+    border-radius: 30px;
+    color: #ddd;
+    transition: .3s;
+}
+.btn i{
+    padding-left: 15px;
+}
+.btn:hover{
+    background-color: #e25970;
+}
+
+/* Products CSS */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 50px 0;
+}
+.all-gears {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+    margin-left: 75px;
+}
+.single-gear {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.gear-info h2 {
+    margin: 10px 0;
+    font-weight: 500;
+}
+.gear-info h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.ratings {
+    display: flex;
+    margin-bottom: 18px;
+}
+.ratings i {
+    color: goldenrod;
+}
+.ratings h4 {
+    margin-left: 15px;
+}
+.gear-info span {
+    display: block;
+    color: gray;
+    padding: 3px 0;
+}
+#products a{
+    color: #e25970;
+}
+
+/* Footer CSS */
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(2, 2, 22);
+}
+footer h2{
+    color: #fff;
+}
+footer p {
+    margin-top: 15px;
+    color: #ddd;
+}
+footer span {
+    display: block;
+    margin-top: 10px;
+}
+.social-media {
+    margin: 20px;
+    margin-bottom: 0;
+}
+.social-media a {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.social-media a:hover{
+    color: #e25970;
+}
