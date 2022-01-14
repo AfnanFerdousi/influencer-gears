@@ -63,11 +63,134 @@ a{
 .top-titles h1 {
     font-size: 50px;
     margin-top: 100px;
+    position: relative;
+}
+.top-titles h1 span {
+    position: relative;
+    display: block;
+}
+.top-titles h1 span::before{
+    content: 'Influencer';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ab273c;
+    animation: typing 3s linear infinite;
+}
+/* animation */
+@keyframes typing {
+    0% {
+        content: 'I|';
+    }
+
+    4% {
+        content: 'In|';
+    }
+
+    8% {
+        content: 'Inf|';
+    }
+
+    12% {
+        content: 'Infl|';
+    }
+
+    16% {
+        content: 'Influ|';
+    }
+
+    20% {
+        content: 'Influe|';
+    }
+
+    24% {
+        content: 'Influen|';
+    }
+
+    28% {
+        content: 'Influenc|';
+    }
+
+    32% {
+        content: 'Influence|';
+    } 
+
+    36% {
+        content: 'Influencer|';
+    }
+
+    40% {
+        content: 'Influencer |';
+        
+    }    
+
+    44% {
+        content: 'Influence|';
+    }
+
+    48% {
+        content: 'Influenc|';
+    }
+
+    52% {
+        content: 'Influen|';
+    }
+
+    56% {
+        content: 'Influe|';
+    }
+
+    60% {
+        content: 'Influ|';
+    }
+
+    64%,
+    83% {
+        content: 'Infl|';
+    }
+
+    84% {
+        content: 'Inf|';
+    }
+
+    85% {
+        content: 'In|';
+    }
+
+    86% {
+        content: 'I|';
+    }
+
+    87% {
+        content: '|';
+    }
+
+    88% ,
+
+    89% ,
+    90% ,
+    91% ,
+    92% ,
+    93% ,
+    94% ,
+    95% ,
+    96% ,
+
+    97% ,
+
+    98% ,
+
+    99% ,
+
+    100% {
+        content: '|';
+    }
 }
 .top-titles p {
     margin: 18px 0;
     margin-right: 100px;
     margin-bottom: 50px;
+    margin-top: 70px;
 }
 .btn {
     background-color: #ab273c;
@@ -233,4 +356,80 @@ footer span {
 }
 .social-media a:hover{
     color: #e25970;
+}
+/* nav */
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon {
+    display: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 215px;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 700px){
+    .logo {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .nav-toggler-icon{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px 0;
+        transform: translateY(-330px);
+        transition: .5s ease-in-out;
+    }
+    .menu li a{
+        color: #121212;
+    }
+    #nav-toggler:checked ~ .menu{
+        transform: translateX(0px);
+        padding-left: 15px;
+    }
+    .top-page {
+        display: block;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .top-titles{
+        margin-bottom: 50px;
+    }
+    .partners{
+        margin-right: 50px;
+    }
+    .partners::before {
+        left: 4.5%;
+        top: -15px;
+    }
+    .partners:after {
+        left: 4.5%;
+        top: 100px;
+    }
+    .all-gears{
+        display: block;
+        margin-left: 125px;
+    }
+    .feedback{
+        display: block;
+    }
+    .feed-info {
+        padding: 25px 25px;
+    }
+    .feedback-right .ratings {
+        margin-left: 80px;
+    }
+    .users {
+        margin-left: 280px;
+        margin-top: -50px;
+    }
 }
