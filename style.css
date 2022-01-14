@@ -160,6 +160,51 @@ a{
     color: #e25970;
 }
 
+/* Feedback CSS */
+.feedback {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 50px 0;
+    border: 2px solid rgba(146, 144, 144, .4);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.feedback-left{
+    display: flex;
+    margin-left: 60px;
+}
+.feedback-left img{
+    width: 200px;
+}
+.feed-info {
+    padding: 45px 25px;
+}
+.feed-info h2 span {
+    display: block;
+    font-size: 18px;
+    color: #938b8b;
+    padding: 5px 0;
+}
+.feedback-right .ratings {
+    margin-left: 165px;
+    font-size: 20px;
+}
+.feedback-right .ratings i {
+    padding: 0 4px;
+}
+.users{
+    display: flex;
+    margin-left: 125px;
+    margin-top: 135px;
+}
+.users img{
+    width: 40px;
+}
+.users a i {
+    color: rgb(146, 144, 144);
+    margin-top: 14px;
+    padding: 0 10px;
+}
 /* Footer CSS */
 footer{
     text-align: center;
